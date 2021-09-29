@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      h2 {
+        font-family: PT Serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.045em;
+        text-align: left;
+      }
+      h4 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .height {
+        position: absolute;
+        width: 238px;
+        height: 426.5px;
+        left: 478px;
+        top: 244.5px;
+      }
+
+      /* img  */
+
+      .img_box img {
+        height: 100%;
+        width: calc(100% - 45px);
+        object-fit: cover;
+        filter: drop-shadow(0px 5px 3px black);
+      }
+      .img_box {
+        width: calc((100% - 35px) / 3);
+        transition: 0.5s;
+      }
+      .vertical_text {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-family: "PT Serif", serif !important;
+        font-size: clamp(0.63rem, 1.5vw, 0.75rem);
+        line-height: 15.9px;
+        writing-mode: vertical-lr;
+      }
+      .box_1{
+        margin-top: 80px;
+      }
+      figcaption{
+        margin-top: 20px;
+        font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
+      }
+      /* hover  */
+      .img_box:hover{
+        transform: scale(1.05);
+  transition: 0.5s;
+       
+      }
+
+      /* media  */
+      @media screen and (max-width: 768px) {
+       .img_box{
+        width: calc((100% - 80px) / 2);
+
+       }
+     .box_1{
+       margin-top: 0;
+     }
+     .box-2{
+       margin-top: 30px;
+     }
+     figcaption{
+      font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+     }
+     .vertical_text{
+      font-family: PT Serif;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
+right: 25px;
+
+
+
+
+     }
+
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-3 p-sm-5">
+      <div class="row justify-content-between d-flex gap-3">
+        <div class="col-md-6 col-12 ">
+          <h2>The creative crew</h2>
+        </div>
+        <div class="col-md-5 col-12 ">
+          <h4>WHO WE ARE</h4>
+          <p>
+            We are team of creative diverse. driven.innovative individuals
+            working in various locations from the world.
+          </p>
+        </div>
+      </div>
+
+      <div class="img_container d-flex justify-content-around mt-4 flex-wrap mt-5">
+        <div class="img_box rounded-3 position-relative mb-4">
+          <div class="position-relative">
+            <img src="photo1.png" class="img-fluid rounded-3" alt="" />
+            <p class="vertical_text">
+             PRODUCT OWNER
+            </p>
+          </div>
+          <figcaption class="">Bill Mahoney</figcaption>
+        </div>
+
+        <div class="img_box rounded-3 position-relative mb-4">
+          <div class="position-relative box_1 box-2">
+            <img src="photo2.png" class="img-fluid rounded-3" alt="" />
+            <p class="vertical_text">
+              ARTDIRECTOR
+            </p>
+          </div>
+          <figcaption class="">Saba Cabrera</figcaption>
+        </div>
+
+        <div class="img_box rounded-3 position-relative">
+          <div class="position-relative">
+            <img src="photo3.png" class="img-fluid rounded-3" alt="" />
+            <p class="vertical_text">
+              TECH LEAD
+            </p>
+          </div>
+          <figcaption class=" ">
+           Shae Le
+          </figcaption>
+        </div>
+
+        <div class="img_box rounded-3 position-relative mb-4">
+          <div class="position-relative box-2">
+            <img src="photo4.png" class="img-fluid rounded-3" alt="" />
+            <p class="vertical_text">
+             UX DESIGNER
+            </p>
+          </div>
+          <figcaption class="">Skylah Lu</figcaption>
+        </div>
+
+        <div class="img_box rounded-3 position-relative mb-4">
+          <div class="position-relative box_1">
+            <img src="photo5.png" class="img-fluid rounded-3" alt="" />
+            <p class="vertical_text">
+             DEVELOPER
+            </p>
+          </div>
+          <figcaption class="">Griff Richards</figcaption>
+        </div>
+
+        <div class="img_box rounded-3 position-relative">
+          <div class="position-relative box-2">
+            <img src="photo6.png" class="img-fluid rounded-3" alt="" />
+            <p class=" vertical_text">
+            DEVELOPER
+            </p>
+          </div>
+          <figcaption class="">Stan John</figcaption>
+        </div>
+
+       
+
+      
+      </div>
+    </div>
+  </body>
+</html>
